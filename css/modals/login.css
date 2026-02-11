@@ -1,0 +1,67 @@
+#login-modal-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#login-container {
+    display: flex;
+    position: relative;
+    max-width: 600px;
+    border: 1px solid #a0a0a0;
+    border-radius: 8px;
+    padding: 20px;
+    gap: 30px;
+    margin: auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#login-container>div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 40px;
+}
+
+#login-container img {
+    display: flex;
+    justify-content: right;
+}
+
+#login-container>div>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#login-container>div form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#login-container>div form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#login-container>div form button {
+    align-self: center;
+}
