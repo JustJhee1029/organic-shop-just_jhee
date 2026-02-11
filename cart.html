@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Let's order fresh items for you.</a></li>
+        <li><a href="#"><img src="img/profile.png" alt="User Profile"></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="search-cart">
+      <div class="search-box">
+        <input type="search" placeholder="Search Products" id="searchInput">
+        <img src="img/search-icon.webp" alt="Search icon">
+        <img src="img/cart.png" alt="cart icon">
+      </div>
+    </section>
+
+    <div class="checkout-layout">
+
+      <section class="cart-items">
+        <h2>Cart Items</h2>
+        <div id="cartContainer"></div>
+      </section>
+
+      <div class="shipping-side">
+
+        <section class="shipping">
+          <h2>Shipping Information</h2>
+          <form id="shippingForm">
+            <div class="form-fill">
+              <input type="text" name="firstName" placeholder="First Name" required>
+              <input type="text" name="lastName" placeholder="Last Name" required>
+            </div>
+
+            <input type="text" name="address1" placeholder="Address" required>
+            <input type="text" name="address2" placeholder="Address 2 (Optional)">
+
+            <div class="form-fill">
+              <input type="text" name="city" placeholder="City" required>
+              <input type="text" name="state" placeholder="State" required>
+              <input type="text" name="zip" placeholder="Zip Code" required>
+            </div>
+          </form>
+        </section>
+
+        <section class="order-summary">
+          <h2>Order Summary</h2>
+          <div class="summary-row">
+            <span>Item Count</span>
+            <span id="itemCount">0</span>
+          </div>
+
+          <div class="summary-part">
+            <span>Shipping Fee</span>
+            <span id="shippingFee">₱0.00</span>
+          </div>
+
+          <div class="summary-part total">
+            <span>Total Amount</span>
+            <span id="totalAmount">₱0.00</span>
+          </div>
+
+          <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+        </section>
+
+      </div>
+    </div>
+  </main>
+</body>
+</html>
