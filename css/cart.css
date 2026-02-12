@@ -1,0 +1,10 @@
+/* Prevent scrolling when a modal is open */
+body.modal-open {
+    overflow: hidden;
+}
+
+/* Blur for background when a modal is open */
+body.modal-open> :not(#check-out-modal-container) {
+    filter: blur(3px);
+    transition: filter 0.2s ease;
+}
