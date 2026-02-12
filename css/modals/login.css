@@ -1,4 +1,4 @@
-#signup-modal-container {
+#login-modal-container {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -10,7 +10,7 @@
     z-index: 1000;
 }
 
-#signup-container {
+#login-container {
     display: flex;
     position: relative;
     max-width: 600px;
@@ -32,51 +32,36 @@
     z-index: 1;
 }
 
-#signup-container>div {
+#login-container>div {
     display: flex;
     flex-direction: column;
     flex: 1;
     gap: 40px;
 }
 
-#signup-container img {
+#login-container img {
     display: flex;
     justify-content: right;
 }
 
-#signup-container>div>div {
+#login-container>div>div {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#signup-container>div form {
+#login-container>div form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-#signup-container>div form .row {
-    display: flex;
-    gap: 20px;
-}
-
-#signup-container>div form .row div {
-    flex: 1;
-}
-
-#signup-container>div form .column {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-#signup-container>div form>div>div {
+#login-container>div form div {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-#signup-container>div form button {
+#login-container>div form button {
     align-self: center;
 }

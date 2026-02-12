@@ -7,7 +7,18 @@
 body {
     background-color: #F3F8FD;
 }
-/* Navigation and Aside Style */
+
+/* Prevent scrolling when a modal is open */
+body.modal-open {
+    overflow: hidden;
+}
+
+/* Blur for background when a modal is open */
+body.modal-open> :not(#signup-modal-container):not(#login-modal-container) {
+    filter: blur(3px);
+    transition: filter 0.2s ease;
+}
+
 header,
 nav,
 .logo-container,
