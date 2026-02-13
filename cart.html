@@ -44,27 +44,39 @@
             </nav>
         </header>
 
-        <section class="search-container">
-            <form action="">
+        <section class="search-cart">
+            <div class="search-form">
+                <i class="bi bi-search search-icon"></i>
                 <input type="text" placeholder="Search for products..." class="search-bar">
-            </form>
+            </div>
 
-            <button type="button"><i class="bi bi-cart4"></i> Cart</button>
+            <button type="button" class="cart-btn">
+                <i class="bi bi-cart4"></i> Cart
+            </button>
         </section>
 
         <main>
             <div class="checkout-layout">
                 <section class="cart-items">
                     <h2>Cart Items</h2>
-                    <div id="cartContainer"></div>
+                    <div id="cartContainer">
+                        <div class="cart-item">
+                            <img src="assets/img/beta_logo.jpg" alt="Product">
+                            <div class="item-details">
+                                <div class="item-name">Sample Product</div>
+                                <div class="item-price">₱100.00</div>
+                            </div>
+                            <input type="number" class="qty-input" value="1">
+                            <button>Edit</button> <!--andito yung delete..?-->
+                        </div>
+                    </div>
                 </section>
 
-                <div class="shipping-side">
-
+                <div class="ship-side">
                     <section class="shipping">
                         <h2>Shipping Information</h2>
                         <form id="shippingForm">
-                            <div class="form-fill">
+                            <div class="form-row">
                                 <input type="text" name="firstName" placeholder="First Name" required>
                                 <input type="text" name="lastName" placeholder="Last Name" required>
                             </div>
@@ -72,7 +84,7 @@
                             <input type="text" name="address1" placeholder="Address" required>
                             <input type="text" name="address2" placeholder="Address 2 (Optional)">
 
-                            <div class="form-fill">
+                            <div class="form-row">
                                 <input type="text" name="city" placeholder="City" required>
                                 <input type="text" name="state" placeholder="State" required>
                                 <input type="text" name="zip" placeholder="Zip Code" required>
@@ -80,32 +92,29 @@
                         </form>
                     </section>
 
+
                     <section class="order-summary">
                         <h2>Order Summary</h2>
                         <div class="summary-row">
                             <span>Item Count</span>
-                            <span id="itemCount">0</span>
+                            <span id="itemCount">1</span>
                         </div>
-
-                        <div class="summary-part">
+                        <div class="summary-row">
                             <span>Shipping Fee</span>
-                            <span id="shippingFee">₱0.00</span>
+                            <span id="shippingFee">₱50.00</span>
                         </div>
-
-                        <div class="summary-part total">
+                        <div class="summary-row total">
                             <span>Total Amount</span>
-                            <span id="totalAmount">₱0.00</span>
+                            <span id="totalAmount">₱150.00</span>
                         </div>
-
                         <button type="button" class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
                     </section>
-
                 </div>
             </div>
         </main>
     </div>
 
-    <!-- modals -->
+    <!-- modals
     <div id="check-out-modal-container">
         <div id="check-out-container">
             <button class="close-btn" type="button">&times;</button>
@@ -144,7 +153,7 @@
         </div>
     </div>
 
-    <script src="js/cart-modal.js"></script>
+ -->
 </body>
 
 </html>
