@@ -61,7 +61,7 @@
             <a href="dashboard.html" class="return-link">Go Back</a>
             <section class="product-container">
                 <div class="product-image">
-                    <img src="assets/img/beta_logo.jpg" alt="Main Image" class="main-image">
+                    <img src="assets/img/beta_logo.jpg" alt="Main Image" class="main-image" id="mainImage">
                     <div class="sub-container">
                         <img src="assets/img/beta_logo.jpg" alt="Sub Image 1" class="sub-image">
                         <img src="assets/img/beta_logo.jpg" alt="Sub Image 2" class="sub-image">
@@ -71,10 +71,10 @@
 
                 <div class="product-description">
                     <div class="product-content">
-                        <h3>Product Name</h3>
-                        <p>5 stars • 999+ Ratings</p>
-                        <h4 class="price-tag">$9999</h4>
-                        <p>
+                        <h3 id="productName">Product Name</h3>
+                        <p id="productMeta">5 stars • 999+ Ratings</p>
+                        <h4 class="price-tag"><span id="productPrice">9999</span>$</h4>
+                        <p id="productDescription">
                             Lorem ipsum dolor sit amet consectetur. Eget sit posuere enim
                             facilisi. Pretium orci venenatis habitasse gravida nulla tincidunt iaculis. Aliquet at massa
                             quisque libero viverra ut sed. Est vulputate est rutrum nunc nunc pellentesque ultrices
@@ -181,7 +181,8 @@
             </section>
         </main>
     </div>
-
+    
+    <script src="js/products.data.js"></script>
     <script src="js/product-view.js"></script>
     <script src="js/input-validation.js"></script>
 </body>

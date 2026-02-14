@@ -166,3 +166,8 @@ main {
     background: #2b6cb0;
     color: white;
 }
+
+.page-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
