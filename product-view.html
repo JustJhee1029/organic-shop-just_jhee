@@ -31,18 +31,18 @@
                     <p>Let's order fresh items for you.</p> <!--this is beta-->
                 </div>
 
-                <!-- <div class="link-container">
+                <div class="link-container" id="auth-links">
                     <button type="button" class="signup-link">SIGN UP</button>
                     <button type="button" class="login-link">LOGIN</button>
-                </div> -->
+                </div>
 
                 <!-- After the user's logged in -->
-                <div class="user-container">
+                <div class="user-container" id="user-profile" style="display: none;">
+                    <span id="user-display-name"></span>
                     <div class="dropdown">
                         <img src="assets/img/beta_logo.jpg" alt="User Profile" class="avatar" id="avatar">
-
                         <div class="dropdown-content" id="dropdownMenu">
-                            <button type="button">Logout</button>
+                            <button type="button" id="logout-btn">Logout</button>
                         </div>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
             <a href="dashboard.html" class="return-link">Go Back</a>
             <section class="product-container">
                 <div class="product-image">
-                    <img src="assets/img/beta_logo.jpg" alt="Main Image" class="main-image">
+                    <img src="assets/img/beta_logo.jpg" alt="Main Image" class="main-image" id="mainImage">
                     <div class="sub-container">
                         <img src="assets/img/beta_logo.jpg" alt="Sub Image 1" class="sub-image">
                         <img src="assets/img/beta_logo.jpg" alt="Sub Image 2" class="sub-image">
@@ -72,10 +72,10 @@
 
                 <div class="product-description">
                     <div class="product-content">
-                        <h3>Product Name</h3>
-                        <p>5 stars • 999+ Ratings</p>
-                        <h4 class="price-tag">$9999</h4>
-                        <p>
+                        <h3 id="productName">Product Name</h3>
+                        <p id="productMeta">5 stars • 999+ Ratings</p>
+                        <h4 class="price-tag"><span id="productPrice">9999</span>$</h4>
+                        <p id="productDescription">
                             Lorem ipsum dolor sit amet consectetur. Eget sit posuere enim
                             facilisi. Pretium orci venenatis habitasse gravida nulla tincidunt iaculis. Aliquet at massa
                             quisque libero viverra ut sed. Est vulputate est rutrum nunc nunc pellentesque ultrices
@@ -182,8 +182,10 @@
             </section>
         </main>
     </div>
-
+    
+    <script src="js/products.data.js"></script>
     <script src="js/product-view.js"></script>
+    <script src="js/input-validation.js"></script>
 </body>
 
 </html>
